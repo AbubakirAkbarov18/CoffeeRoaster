@@ -1,0 +1,74 @@
+%container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+:root{
+    --MainFontFirst: 'Barlow', sans-serif, 'Roboto', sans-serif;
+    --MainFontSecond: 'Fraunces', serif;
+    --typeofwhite: #FEFCF7;
+    --typeofblue: #333D4B;
+}
+
+%links {
+    color: #83888F;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.navbar{
+    padding: 44px 0px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+.container {
+    @extend %container;
+
+}
+
+// @mixin links() {
+//     color: #83888F;
+//     font-family: 'Barlow', sans-serif;
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 12px;
+//     font-weight: 700;
+//     line-height: 15px; 
+//     letter-spacing: 0.923px;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     text-transform: none;
+// }
+
+// @include cards();
+
+.navbar__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 33px;
+    max-width: 283px;
+}
+
+.link {
+    @extend %links;
+
+    &:hover{
+        color: #000000;
+    }
+}

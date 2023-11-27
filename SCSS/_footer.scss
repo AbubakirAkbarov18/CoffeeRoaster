@@ -1,0 +1,42 @@
+:root {
+    --MainFontFirst: 'Barlow', sans-serif, 'Roboto', sans-serif;
+    --MainFontSecond: 'Fraunces', serif;
+    --typeofwhite: #FEFCF7;
+    --typeofblue: #333D4B;
+}
+
+.footer__wrapper {
+    background: #2C343E;
+    padding: 53px 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    gap: 0px 103px;
+
+    .footer--list {
+        margin-top: 7px;
+
+        .footer--link {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.medias {
+    display: flex;
+    gap: 0px 28px;
+
+    img {
+        cursor: pointer;
+    }
+}
